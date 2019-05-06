@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生意参谋-首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="logo-title row text-center">
+                        <div class="col-md-3 wow bounceInLeft"></div>
+                        <div class="col-md-1 wow bounceInDown"></div>
+                        <div class="col-md-8 wow text-center bounceInRight">超级店长您的互联网渠道商</div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center col-md-offset-4">
+                    <ul>
+                        <li class="active wow bounceInDown">首页</li>
+                        <li class="wow bounceInDown">案例</li>
+                        <li class="wow bounceInUp">版本</li>
+                    </ul>
+                    <div class="login wow bounceInRight">
+                        <a href="#" class="l">登录</a>
+                        <a href="#">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom row">
+            <div class="col-md-7 col-md-offset-1"></div>
+            <div class="col-md-4">
+                <h3>现已有<i id="count"></i>人加入我们</h3>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(function(){
+            new WOW().init();
+            $("#count").numberRock({
+                lastNumber:5456445646,		//终止数字
+                duration:1000,
+                easing:'linear',  	//慢快慢
+            });
+        });
+        (function($){
+            $.fn.numberRock=function(options){
+                var defaults={
+                    lastNumber:100,
+                    duration:2000,
+                    easing:'swing'  //swing(默认 : 缓冲 : 慢快慢)  linear(匀速的)
+                };
+                var opts=$.extend({}, defaults, options);
+
+                $(this).animate({
+                    num : "numberRock",
+                },{
+                    duration : opts.duration,
+                    easing : opts.easing,
+                    complete : function(){
+                        console.log("success");
+                    },
+                    step : function(a,b){  //可以检测我们定时器的每一次变化
+                        $(this).html(parseInt(b.pos * opts.lastNumber));
+                    }
+                });
+
+            }
+
+        })(jQuery);
+
+    </script>
+</body>
+</html>

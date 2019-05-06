@@ -1,0 +1,113 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-color: #fff;
+    background-image: url('../images/bg01.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main{
+    margin-top: 10%;
+}
+.main .logo-title{
+    height: 145px;
+    line-height: 145px;
+    margin-top: 150px;
+    color: #fff;
+    font-size: 25px;
+    background-image: url('../images/lgbg.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main .logo-title .col-md-3{
+    background-image: url('../images/logo.png');
+    background-size: 50%;
+}
+.main .logo-title .col-md-1{
+    background-image: url('../images/lig.png');
+    background-size: 44%;
+}
+.main .logo-title .col-md-3,.main .logo-title .col-md-1{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main .col-md-2 ul{
+    list-style: none;
+    padding: 0;
+    font-size: 26px;
+    margin-bottom: 65px;
+}
+.main .col-md-2 ul li{
+    display: block;
+    width: 102px;
+    height: 102px;
+    padding: 14px 37px;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+.active{
+    color: #767676;
+    border: 1px solid #000!important;
+    border-radius: 50%;
+}
+.main .col-md-2 ul li:hover{
+    color: #767676;
+    border: 1px solid #767676!important;
+    border-radius: 50%;
+}
+.main .col-md-2 ul li::before{
+    content: '';
+    height: 50px;
+    position: absolute;
+    border-right: 1px solid #000;
+    right: 50%;
+    top: -40px;
+    margin: 0 auto;
+}
+.main .col-md-2 ul li::after{
+    content: '';
+    height: 50px;
+    position: absolute;
+    border-right: 1px solid #000;
+    right: 50%;
+    bottom: -40px;
+    margin: 0 auto;
+}
+.main .login{
+    overflow: hidden;
+}
+.main .login a{
+    display: block;
+    float: left;
+    font-size: 18px;
+    padding: 0 7px 7px 7px;
+    border-bottom: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+}
+.main .login  .l{
+    border-right: 1px solid #000;
+}
+.bottom{
+    width: 100%;
+    position: absolute;
+    bottom:35px;
+}
+.bottom .col-md-7{
+    margin-top: 35px;
+    border-bottom: 1px solid #000;
+}
+.bottom .col-md-4 h3{
+    padding-left: 20px;
+}
+.bottom .col-md-4 h3 i{
+    font-size: 30px;
+    color: #21cfff;
+}

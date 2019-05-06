@@ -12,8 +12,8 @@
 <body>
     <div class="container-fluid text-center">
         <div class="main">
-            <h3 class="wow bounceInLeft">生 意 参 谋 登 录</h3>
-            <section class="wow bounceInDown">
+            <h3 class="wow bounceInLeft" data-wow-delay="0.5s">生 意 参 谋 登 录</h3>
+            <section class="wow bounceInDown" data-wow-delay="0.5s">
                 <div class="row">
                     <div class="col-md-3 text-right">用户名：</div>
                     <div class="col-md-7"><input type="text"></div>
@@ -33,14 +33,14 @@
             </section>
         </div>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
     <script>
-        $(function(){
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
             new WOW().init();
-        })
-
+        };
     </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>

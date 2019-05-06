@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -40,9 +41,14 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            new WOW().init();
+        };
+    </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

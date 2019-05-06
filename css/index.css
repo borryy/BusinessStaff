@@ -6,7 +6,7 @@ body{
     background-color: #fff;
     background-image: url('../images/bg01.png');
     background-position: center;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .main{

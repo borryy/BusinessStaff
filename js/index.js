@@ -1,5 +1,5 @@
+
 $(function(){
-    new WOW().init();
     $("#count").numberRock({
         lastNumber:5456445646,		//终止数字
         duration:2000,

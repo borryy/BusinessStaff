@@ -33,15 +33,15 @@
                 </div>
                 <div class="col-md-2 text-center col-md-offset-1">
                     <ul>
-                        <li class="active wow bounceInDown" data-wow-delay="0.8s"><a class="link" href="case.html">案例</a></li>
-                        <li class="wow bounceInDown" data-wow-delay="0.9s"><a href="index.html">首页</a></li>
+                            <li onclick="javascript:window.location.href='index.html'" class=" wow bounceInDown "><span class="animat">首页</span></li>
+                            <li onclick="javascript:window.location.href='case.html'" class="wow bounceInDown active"><span class="animat">案例</span> </li>
                         <!-- <li class="wow bounceInUp"><a href="./price.html">版本</a></li> -->
                     </ul>
                     <div class="login wow bounceInUp" data-wow-delay="1s">
-                        <a href="login.html" class="l">登录</a>
-                        <a href="register.html">注册</a>
+                        <a href="login.html" class="l"><span class="animat">登录</span></a>
+                        <a href="register.html"><span class="animat">注册</span></a>
                     </div>
-                    <div class="buy wow bounceInLeft" data-wow-delay="1.1s"><a href="price.html">立即购买</a></div>
+                    <div class="buy wow bounceInLeft" data-wow-delay="1.1s"><a href="price.html" class="animat">立即购买</a></div>
                 </div>
             </div>
         </div>
@@ -53,9 +53,18 @@
         };
     </script>
     <div id="particles-js"></div>
+    <script src="js/jquery.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
     <script src="./js/case.js"></script>
+    <script>
+        $('.animat').mouseover(function(){
+            $(this).addClass('animated swing')
+        })
+        $('.animat').mouseleave(function(){
+            $(this).removeClass('animated swing')
+        })
+    </script>
 </body>
 
 </html>

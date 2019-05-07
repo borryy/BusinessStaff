@@ -1,7 +1,7 @@
 
 $(function(){
     $("#count").numberRock({
-        lastNumber:5456445646,		//终止数字
+        lastNumber:65221,		//终止数字
         duration:10000,
         easing:'swing',  	//慢快慢
     });

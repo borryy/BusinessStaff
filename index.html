@@ -14,33 +14,34 @@
     <div class="container-fluid">
         <div class="main">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-5 wow bounceInLeft">
                     <div class="logo-title row text-center">
-                        <div class="col-md-3 wow bounceInLeft"></div>
-                        <div class="col-md-1 wow bounceInDown"></div>
-                        <div class="col-md-8 wow text-center bounceInRight">超级店长您的互联网渠道商</div>
+                        <div class="col-md-3 wow bounceInLeft" data-wow-delay="0.5s"></div>
+                        <div class="col-md-1 wow bounceInDown" data-wow-delay="0.5s"></div>
+                        <div class="col-md-8 wow text-center bounceInRight" data-wow-delay="0.5s">超级店长您的互联网渠道商</div>
                     </div>
                 </div>
                 <div class="col-md-2 text-center col-md-offset-4">
                     <ul>
-                        <li onclick="javascript:window.location.href='index.html'" class="active wow bounceInDown">首页</li>
-                        <li onclick="javascript:window.location.href='case.html'" class="wow bounceInDown">案例</li>
+                        <li onclick="javascript:window.location.href='index.html'" class="active wow bounceInDown "><span class="animat">首页</span></li>
+                        <li onclick="javascript:window.location.href='case.html'" class="wow bounceInDown"><span class="animat">案例</span> </li>
                         
                     </ul>
-                    <div class="login wow bounceInRight">
-                        <a href="login.html" class="l">登录</a>
-                        <a href="register.html">注册</a>
+                    <div class="login wow bounceInRight ">
+                        <a href="login.html" class="l "><span class="animat">登录</span></a>
+                        <a href="register.html" ><span class="animat">注册</span></a>
                     </div>
-                    <div class="buy wow bounceInLeft"><a href="price.html">立即购买</a></div>
+                    <div class="buy wow bounceInLeft"><a href="price.html" class="animat">立即购买</a></div>
                 </div>
             </div>
         </div>
         <div class="bottom row">
             <div class="col-md-7 col-md-offset-1"></div>
             <div class="col-md-4">
-                <h3>现已有 <i id="count"></i> 商家已使用</h3>
+                <h3>现已有 <i id="count" class="animat"></i> 商家已使用</h3>
             </div>
         </div>
+        <div id="particles-js"></div>
     </div>
     <script type="text/javascript" src="js/wow.js"></script>
     <script>
@@ -50,6 +51,17 @@
     </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+    
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/index.js"></script>
+    <script>
+        $('.animat').mouseover(function(){
+            $(this).addClass('animated swing')
+        })
+        $('.animat').mouseleave(function(){
+            $(this).removeClass('animated swing')
+        })
+    </script>
 </body>
 </html>

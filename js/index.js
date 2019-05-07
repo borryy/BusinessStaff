@@ -2,8 +2,8 @@
 $(function(){
     $("#count").numberRock({
         lastNumber:5456445646,		//终止数字
-        duration:2000,
-        easing:'linear',  	//慢快慢
+        duration:10000,
+        easing:'swing',  	//慢快慢
     });
 });
 (function($){

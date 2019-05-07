@@ -11,7 +11,13 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-
+#particles-js{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
 a,
 a:hover,
 a:focus {
@@ -25,6 +31,8 @@ li:hover a {
 
 .main {
     margin-top: 10%;
+    position: relative;
+    z-index: 2;
 }
 
 .main .logo-title {
@@ -55,14 +63,31 @@ li:hover a {
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.main .col-md-2{
+    z-index: 2;
+}
 .main .col-md-2 ul {
     list-style: none;
     padding: 0;
     font-size: 26px;
     margin-bottom: 65px;
 }
-
+.main .buy{
+    width: 101px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #fff;
+    padding: 7px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.main .buy:hover{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main .buy a{
+    color: #000;
+    text-decoration: none;
+}
 .main .col-md-2 ul li {
     display: block;
     width: 102px;
@@ -113,7 +138,7 @@ li:hover a {
 .main .login a {
     display: block;
     float: left;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0 7px 7px 7px;
     border-bottom: 1px solid #000;
     color: #000;
@@ -145,7 +170,7 @@ li:hover a {
 }
 
 .bgw {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .6);
 }
 
 .row.bgw {

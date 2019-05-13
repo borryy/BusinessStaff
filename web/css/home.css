@@ -1,0 +1,29 @@
+.navbar-default .navbar-nav>li>a{
+    color: #000;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    color: chocolate;
+}
+.navbar-default .navbar-brand{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav>li>a{
+    padding: 18px 30px;
+}
+.navbar{
+    margin: 0;
+}
+.container .main .col-md-6{
+    padding-top: 100px;
+}
+.container .main .col-md-6 img{
+    width: 50%;
+    border-radius: 50%;
+}
+.container .main .col-md-3 img{
+    padding-top: 100px;
+    width: 50%;
+}

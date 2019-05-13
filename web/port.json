@@ -1,0 +1,31 @@
+{
+    "index":{
+        "data":{
+            "logo":"./images/logo.png",
+            "logoTitle":"超级店长您的互联网渠道商",
+            "shopSize":"6522",
+            "backgroundImg":"./images/logo.png",
+            "menuList":["首页","案例"],
+            "style":1
+        }
+    },
+    "case":{
+        "data":{
+            "caseList":[
+                {"shopLogo":"./images/logo.png","shopIntro":"超级店长您的互联网渠道商"},
+                {"shopLogo":"./images/logo.png","shopIntro":"超级店长您的互联网渠道商"},
+                {"shopLogo":"./images/logo.png","shopIntro":"超级店长您的互联网渠道商"}
+            ],
+            "menuList":["首页","案例"]
+        }
+    },
+    "versions":{
+        "data":{
+            "versionsList":[
+                {"versionsName":"免费版","versionsIntro":"超级店长您的互联网渠道商"},
+                {"versionsName":"专业版","versionsIntro":"超级店长您的互联网渠道商"},
+                {"versionsName":"高级版","versionsIntro":"超级店长您的互联网渠道商"}
+            ]
+        }
+    }
+}

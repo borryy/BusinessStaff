@@ -64,6 +64,9 @@ hr{ border-top-color:#dadada;}
 }
 #header h1 a {
 	display: block;
+	line-height: 1;
+	font-size: 20px;
+	color: #fff;
 }
 /* Search input */
 #search {
